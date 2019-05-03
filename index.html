@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
 <head>
-	<title>Ismail Joseph | Junior Web Dev</title>
+	<title>Joseph Ismail | Junior Web Dev</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Portfolio of Ismail Joseph - Junior web developer looking for an internship.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Portfolio of Joseph Ismail - Junior web developer looking for an internship.">
 	<meta name="keywords" content="webdesign, web development, internship, back-end, front-end">
 	<meta name="robots" content="index, follow">
-	<meta name="author" content="Ismail Joseph">
+	<meta name="author" content="Joseph Ismail">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.html">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="./images/chat.png">
 	<script>
@@ -18,18 +20,21 @@
 <body>
 	<header role="banner">
 		<div class="page-wrap clearfix">
-	  		<a href="index.html" id="logo">Ismail Joseph</a>
-
-		  	<nav id="main-nav" role="navigation">
-				<ul>
-					<li><a href="#portfolio-desc">Portfolio</a></li>
-					<li><a href="#recent-work">Recent Work</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<!-- <li><a href="">Blog</a></li> -->
-				</ul>
+		  	<nav class="navbar navbar-expand-md navbar-light">
+		  		<a class="navbar-brand" href="index.html" id="logo">Joseph Ismail</a>
+		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+				</button>
+		  		<div class="collapse navbar-collapse" id="main-nav">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"><a class="nav-link" href="#portfolio-desc">Portfolio</a></li>
+						<li class="nav-item"><a class="nav-link" href="#recent-work">Recent Work</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+						<!-- <li><a href="">Blog</a></li> -->
+					</ul>
+		  		</div>
 			</nav><!-- Main nav -->
-			<a href="#nav" id="toggle"><span aria-hidden="true" class="icon-menu"></span></a>
 		</div><!-- Page wrap -->
 	</header>
 
@@ -37,7 +42,7 @@
 		
 		<div class="page-wrap">
 			
-			<h1>Ismail Joseph</h1>
+			<h1>Joseph Ismail</h1>
 			<h2>I'm a junior web developer, trained to be full stack but with a focus on algorithms and back-end developement.<br> I am currently looking for an enriching internship!</h2>
 			<a class="button check-work" href="#portfolio-desc">Check my work</a>
 			<a class="button know-more" href="#about">Know more about me</a>
@@ -253,7 +258,7 @@
 		
 		<div class="page-wrap">
 			
-			<p id="copy"><span>©2019 <a href="mailto:ismail.jsph@gmail.com">Ismail Joseph</a></span>. Made in Belgium</p>
+			<p id="copy"><span>©2019 <a href="mailto:ismail.jsph@gmail.com">Joseph Ismail</a></span>. Made in Belgium</p>
 			
 			<div class="follow-links-container">
 				
@@ -270,5 +275,9 @@
 	</footer>
 	<script src="code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="js/retina.js"></script>
-	<script src="js/all-desktop.js"></script>		
+	<script src="js/all-desktop.js"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+
 </body>

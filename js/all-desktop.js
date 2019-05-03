@@ -308,11 +308,12 @@ $(document).ready(function (){
 		}                
 
 
-		$("#home h1").toggleClass("hidden",$(this).scrollTop() > 60);
-		$("#home h2").toggleClass("hidden", $(this).scrollTop() > 160);
-		$("#home .check-work").toggleClass("hidden", $(this).scrollTop() > 260);
-		$("header[role='banner']").toggleClass("shadowed", $(this).scrollTop() > 700);
-		$("#main-nav a").toggleClass("on-white", $(this).scrollTop() > 700);
+		$("#home h1").toggleClass("hidden",$(this).scrollTop() > 60-25);
+		$("#home h2").toggleClass("hidden", $(this).scrollTop() > 160-25);
+		$("#home .check-work").toggleClass("hidden", $(this).scrollTop() > 260-25);
+		$("#home .know-more").toggleClass("hidden", $(this).scrollTop() > 260);
+		$("header[role='banner']").toggleClass("shadowed", $(this).scrollTop() > 700-35);
+		$("#main-nav a").toggleClass("on-white", $(this).scrollTop() > 700-35);
 
 	});
 
