@@ -20,10 +20,10 @@ By [Ismail Joseph](https://github.com/Fesouille).
 
 * A few illustrating pictures:
 
-![Screenshot portfolio](img/screenshot1.png)
-![Screenshot portfolio](img/screenshot2.png)
-![Screenshot portfolio](img/screenshot3.png)
-![Screenshot portfolio](img/screenshot4.png)
+![Screenshot portfolio](images/screenshot1.png)
+![Screenshot portfolio](images/screenshot2.png)
+![Screenshot portfolio](images/screenshot3.png)
+![Screenshot portfolio](images/screenshot4.png)
 
 
 * Progress: 
