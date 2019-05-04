@@ -136,6 +136,10 @@ body {
   transition: background-color 0.5s ease-in-out, 1s;
   text-decoration: none; }
 
+.button:hover{
+  text-decoration: none;
+}
+
 .page-wrap {
   margin: 0 auto;
   width: 90%;
@@ -262,14 +266,13 @@ header[role="banner"] {
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out; }
-  @media screen and (max-width: 768px) {
-    /* line 259, scss/style.scss */
+  /*@media screen and (max-width: 768px) {
     header[role="banner"] {
-      position: absolute; } }
+      position: absolute; } }*/
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   header[role="banner"] .page-wrap {
-    width: 100%; } }
+    width: 100%; } }*/
 
 .shadowed {
   background: #fff;
@@ -315,7 +318,7 @@ header[role="banner"].not-fixed {
 /*header[role="banner"] nav {
   float: right; }*/
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 10px) {
   .js #main-nav {
     clip: rect(0 0 0 0);
     max-height: 0;
@@ -327,13 +330,30 @@ header[role="banner"].not-fixed {
 #main-nav {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0); }
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 50px) {
     #main-nav {
       width: 100%; } }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 50px) {
   #main-nav.opened {
     height: 100%; } }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,255,255, 0.5);
+  outline: none;
+}
+
+.custom-toggler .navbar-toggler-icon:hover{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler:hover {
+  border: 1.5px solid rgb(255,255,255);
+} 
 
 #main-nav ul {
   display: block;
@@ -342,7 +362,7 @@ header[role="banner"].not-fixed {
 #main-nav li {
   float: left;
   display: block; }
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 50px) {
     #main-nav li {
       width: 100%;
       float: none;
@@ -363,7 +383,7 @@ header[role="banner"].not-fixed {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-bottom: 3px solid transparent; }
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 50px) {
     #main-nav a {
       color: #d24d57;
       margin-top: 0;
@@ -371,17 +391,32 @@ header[role="banner"].not-fixed {
 
 #main-nav a:hover {
   border-bottom: 3px solid #fff; }
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 50px) {
     #main-nav a:hover {
       background: #d24d57;
       color: #fff;
       border-bottom: 1px solid #d24d57; } }
 
+.on-white-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(210,77,87, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.on-white-toggler.navbar-toggler {
+  border-color: rgb(210,77,87, 0.5);
+  outline: none;
+}
+
+.on-white-toggler .navbar-toggler-icon:hover{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(210,77,87)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.on-white-toggler.navbar-toggler:hover {
+  border: 1.8px solid rgb(210,77,87);
+}
 
 #main-nav .on-white {
   color: #d24d57;
   padding-bottom: 3em; }
-
 
 #main-nav .on-white:hover,
 #main-nav .active .on-white {

@@ -1,3 +1,5 @@
+//On click of the logo or/and at each page refresh, a new picture of me appears
+/*Array containing all the pictures to select*/
 var url=[
 	'images/profiles/1.jpg', 
 	'images/profiles/2.jpg',
@@ -17,8 +19,18 @@ var url=[
 	'images/profiles/16.jpg',
 	'images/profiles/17.jpg'
 	];
-var index=parseInt(Math.random()*url.length);
-document.getElementById("logo").style.backgroundImage = "url('"+url[index]+"')";
+var logo=document.getElementById("logo");
+function newLogo(){
+	var index=parseInt(Math.random()*url.length);
+	logo.style.backgroundImage = "url('"+url[index]+"')";
+}
+newLogo();
+logo.addEventListener("click", function(){
+	newLogo();
+})
+
+
+
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-touch-shiv-cssclasses-teststyles-prefixes-load
  */
@@ -263,7 +275,6 @@ $(document).ready(function (){
 		var item = $($(this).attr("href"));
 		if (item.length) { return item; }
 	});
-
 	// Bind click handler to menu items so we can get a fancy scroll animation
 	menuItems.click(function(e){
 		var href = $(this).attr("href"),
@@ -276,8 +287,27 @@ $(document).ready(function (){
 
 
 	var checkWork = $("#home a")
-
 	checkWork.click(function(e){
+		var href = $(this).attr("href"),
+		offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+			$('html, body').stop().animate({ 
+			scrollTop: offsetTop
+			}, 1000);
+			e.preventDefault();
+	});
+
+	var logo = $("#logo")
+	logo.click(function(e){
+		var href = $(this).attr("href"),
+		offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+			$('html, body').stop().animate({ 
+			scrollTop: offsetTop
+			}, 1000);
+			e.preventDefault();
+	});
+
+	var internalLink = $(".internalLink")
+	internalLink.click(function(e){
 		var href = $(this).attr("href"),
 		offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
 			$('html, body').stop().animate({ 
@@ -312,8 +342,9 @@ $(document).ready(function (){
 		$("#home h2").toggleClass("hidden", $(this).scrollTop() > 160-25);
 		$("#home .check-work").toggleClass("hidden", $(this).scrollTop() > 260-25);
 		$("#home .know-more").toggleClass("hidden", $(this).scrollTop() > 260);
-		$("header[role='banner']").toggleClass("shadowed", $(this).scrollTop() > 700-35);
-		$("#main-nav a").toggleClass("on-white", $(this).scrollTop() > 700-35);
+		$("header[role='banner']").toggleClass("shadowed", $(this).scrollTop() > 700-200);
+		$(".custom-toggler").toggleClass("on-white-toggler", $(this).scrollTop() > 700-200);		
+		$("#main-nav a").toggleClass("on-white", $(this).scrollTop() > 700-200);
 
 	});
 
