@@ -22,7 +22,7 @@ var url=[
 var logo=document.getElementById("logo");
 function newLogo(){
 	var index=parseInt(Math.random()*url.length);
-	logo.style.backgroundImage = "url('"+url[10]+"')";
+	logo.style.backgroundImage = "url('"+url[index]+"')";
 }
 newLogo();
 logo.addEventListener("click", function(){
