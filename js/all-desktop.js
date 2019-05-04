@@ -10,10 +10,10 @@ var url=[
 	'images/profiles/7.jpg',
 	'images/profiles/8.jpg',
 	'images/profiles/9.jpg',
-	'images/profiles/10.jpg',
-	'images/profiles/11.jpg',
-	'images/profiles/12.jpg',
-	'images/profiles/13.jpg',
+	'images/profiles/10.JPG',
+	'images/profiles/11.JPG',
+	'images/profiles/12.JPG',
+	'images/profiles/13.JPG',
 	'images/profiles/14.jpg',
 	'images/profiles/15.jpg',
 	'images/profiles/16.jpg',
@@ -22,7 +22,7 @@ var url=[
 var logo=document.getElementById("logo");
 function newLogo(){
 	var index=parseInt(Math.random()*url.length);
-	logo.style.backgroundImage = "url('"+url[index]+"')";
+	logo.style.backgroundImage = "url('"+url[10]+"')";
 }
 newLogo();
 logo.addEventListener("click", function(){
