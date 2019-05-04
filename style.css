@@ -984,7 +984,6 @@ header[role="banner"].not-fixed {
     #about h2 {
       font-size: 1.875em; } }
 
-/* line 928, scss/style.scss */
 #about p {
   font-size: 1.375em;
   text-align: center;
@@ -992,15 +991,12 @@ header[role="banner"].not-fixed {
   padding: 0 10%;
   margin-top: 1em; }
   @media screen and (max-width: 1024px) {
-    /* line 928, scss/style.scss */
     #about p {
       padding: 0; } }
   @media screen and (max-width: 640px) {
-    /* line 928, scss/style.scss */
     #about p {
       font-size: 1.125em; } }
 
-/* line 939, scss/style.scss */
 #recent-work a, #about a {
   border-bottom: 1px solid transparent;
   background: rgba(0, 0, 0, 0.2);
@@ -1013,14 +1009,9 @@ header[role="banner"].not-fixed {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
 
-/* line 949, scss/style.scss */
-#about a:hover {
+#recent-work a:hover, #about a:hover {
   background: rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid #fff; }
-
-#about span.strikethrough {
-  text-decoration: line-through;
-}
 
 /* ---------------------------------------------------------------------------------------------------------- 
 10 Contact Section ------------------------------------------------------------------------------------------
