@@ -286,6 +286,7 @@ header[role="banner"].not-fixed {
 #logo {
   border-radius: 50%;
   display: block;
+  margin-bottom: 5px;
   text-indent: -9999em;
   width: 68px;
   height: 68px;
