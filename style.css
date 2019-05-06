@@ -648,23 +648,6 @@ header[role="banner"].not-fixed {
       width: 30%;
       margin: 1.875em 0; } }
 
-#about hr {
-  background-color: #fff;
-  width: 6%;
-  height: 0.0625em;
-  border: none;
-  margin-left: 47%;
-  margin-top: 1.5625em;
-  margin-bottom: 1.5625em; }
-  @media screen and (max-width: 1024px) {
-    .portfolio .info-container hr {
-      width: 10%;
-      margin-left: 45%; } }
-  @media screen and (min-width: 1600px) {
-    .portfolio .info-container hr {
-      width: 30%;
-      margin: 1.875em 0; } }
-
 .portfolio .info-container p {
   font-size: 1.3em;
   width: 60%;
@@ -856,17 +839,20 @@ header[role="banner"].not-fixed {
 ---------------------------------------------------------------------------------------------------------- */
 #about {
   background: #016052 url(images/stream.jpg) no-repeat;
+  background-size: cover;
   color: #fff;
   text-align: center;
   padding: 14.375em 0; }
   @media screen and (max-width: 1024px) {
     #about {
-      padding: 7.5em 0;
-      background: #016052 url(images/stream.jpg) no-repeat; } }
+      background: #016052 url(images/stream-1024.jpg) no-repeat;
+      background-size: cover;
+      padding: 7.5em 0; } }
   @media screen and (max-width: 640px) {
     #about {
       padding: 5em 0;
-      background: #016052 url(images/stream-640.jpg) no-repeat; } }
+      background: #016052 url(images/stream-640.jpg) no-repeat;
+      background-size: cover; } }
 
 #about h2 {
   font-size: 2.5em;
@@ -877,6 +863,23 @@ header[role="banner"].not-fixed {
   @media screen and (max-width: 640px) {
     #about h2 {
       font-size: 1.875em; } }
+
+#about hr {
+  background-color: #fff;
+  width: 6%;
+  height: 0.0625em;
+  border: none;
+  margin-left: 47%;
+  margin-top: 1.5625em;
+  margin-bottom: 1.5625em; }
+  @media screen and (max-width: 1024px) {
+    .portfolio .info-container hr {
+      width: 10%;
+      margin-left: 45%; } }
+  @media screen and (min-width: 1600px) {
+    .portfolio .info-container hr {
+      width: 30%;
+      margin: 1.875em 0; } }
 
 #about p {
   font-size: 1.375em;
