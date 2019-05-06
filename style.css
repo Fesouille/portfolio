@@ -428,7 +428,6 @@ header[role="banner"].not-fixed {
 ---------------------------------------------------------------------------------------------------------- */
 #home {
   background: #d24d57 url(images/header-bg.jpg) 50% 0 no-repeat fixed;
-  background-size: cover;
   padding: 12.5em 0;
   color: #fff;
   text-align: center;
@@ -436,23 +435,22 @@ header[role="banner"].not-fixed {
   -moz-transition: padding 0.2s linear;
   -o-transition: padding 0.2s linear;
   transition: padding 0.2s linear; }
-  /*@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
     #home {
-      background-image: url("images/header-bg%402x.jpg"); } }*/
+      background-image: url("images/header-bg%402x.jpg"); } }
   @media screen and (max-width: 1024px) {
     #home {
-      background-size: cover;
+      background: #d24d57 url(images/header-bg.jpg) 50% 0 no-repeat fixed;
       padding: 10em 0; } }
-    /*@media screen and (max-width: 1024px) and (min--moz-device-pixel-ratio: 1.3), screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 2.6 / 2), screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.3), screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.3), screen and (max-width: 1024px) and (min-resolution: 1.3dppx) {
+    @media screen and (max-width: 1024px) and (min--moz-device-pixel-ratio: 1.3), screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 2.6 / 2), screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.3), screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.3), screen and (max-width: 1024px) and (min-resolution: 1.3dppx) {
       #home {
-        background-image: url("images/header-bg-1024%402x.jpg"); } }*/
+        background-image: url("images/header-bg-1024%402x.jpg"); } }
   @media screen and (max-width: 768px) {
     #home {
       padding: 6.25em 0; } }
   @media screen and (max-width: 640px) {
     #home {
-      background-size: cover;
-      /*background: #d24d57 url(images/header-bg-640.jpg) 50% 0 no-repeat fixed;*/
+      background: #d24d57 url(images/header-bg-640.jpg) 50% 0 no-repeat fixed;
       padding: 2.5em 0; } }
   @media screen and (min-width: 1600px) {
     #home {
@@ -807,16 +805,17 @@ header[role="banner"].not-fixed {
   background: #fff; }
 
 #recent-work header {
-  background: #016052 /*url(images/laptop.jpg)*/ 50% 0 no-repeat fixed;
-  background-size: cover;
+  background: #016052 url(images/laptop.jpg) 50% 0px no-repeat;
   padding-top: 7.5em;
   padding-bottom: 7.5em;
   text-align: center; }
   @media screen and (max-width: 1024px) {
     #recent-work header {
+      background: #016052 url(images/laptop.jpg) 50% 50% no-repeat;
       padding: 5em 0; } }
   @media screen and (max-width: 640px) {
     #recent-work header {
+      background: #016052;
       padding: 3.125em 0; } }
 
 #recent-work header h2 {
@@ -857,19 +856,17 @@ header[role="banner"].not-fixed {
 ---------------------------------------------------------------------------------------------------------- */
 #about {
   background: #016052 url(images/stream.jpg) no-repeat;
-  background-size: cover;
   color: #fff;
   text-align: center;
   padding: 14.375em 0; }
   @media screen and (max-width: 1024px) {
     #about {
       padding: 7.5em 0;
-      background-size: cover; } }
+      background: #016052 url(images/stream.jpg) no-repeat; } }
   @media screen and (max-width: 640px) {
     #about {
       padding: 5em 0;
-      background: #016052 url(images/stream-640.jpg) no-repeat;
-      background-size: cover; } }
+      background: #016052 url(images/stream-640.jpg) no-repeat; } }
 
 #about h2 {
   font-size: 2.5em;
