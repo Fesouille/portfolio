@@ -273,7 +273,7 @@ $(document).ready(function (){
 	// Anchors corresponding to menu items
 	scrollItems = menuItems.map(function(){
 		var item = $($(this).attr("href"));
-		if (item.length) { return item; }
+		if (item.length) { return item;}
 	});
 	// Bind click handler to menu items so we can get a fancy scroll animation
 	menuItems.click(function(e){
