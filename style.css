@@ -805,17 +805,15 @@ header[role="banner"].not-fixed {
   background: #fff; }
 
 #recent-work header {
-  background: #016052 url(images/laptop.jpg) 50% 0px no-repeat;
+  background: #016052 50% 0px no-repeat;
   padding-top: 7.5em;
   padding-bottom: 7.5em;
   text-align: center; }
   @media screen and (max-width: 1024px) {
     #recent-work header {
-      background: #016052 url(images/laptop.jpg) 50% 50% no-repeat;
       padding: 5em 0; } }
   @media screen and (max-width: 640px) {
     #recent-work header {
-      background: #016052;
       padding: 3.125em 0; } }
 
 #recent-work header h2 {
