@@ -13,7 +13,7 @@ By [Ismail Joseph](https://github.com/Fesouille).
 	* This portfolio sums up all my most relevant work as junior web developer.
 
 * Content:
-	* My portfolio is built up with HTML, CSS and JAVASCRIPT.
+	* My portfolio is built up with HTML, CSS and JAVASCRIPT (+ JQuery).
 
 * Check it out! :
 	* [My first portfolio](https://fesouille.github.io/portfolio/)
