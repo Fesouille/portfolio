@@ -26,5 +26,3 @@ By [Ismail Joseph](https://github.com/Fesouille).
 ![Screenshot portfolio](images/screenshot4.png)
 
 
-* Progress: 
-	* 29 april 2019: version 1.0.
